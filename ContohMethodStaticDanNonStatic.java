@@ -1,3 +1,5 @@
+import java.net.SocketOptions;
+
 public class ContohMethodStaticDanNonStatic {
 
     // Method static untuk menghitung luas persegi
@@ -17,5 +19,10 @@ public class ContohMethodStaticDanNonStatic {
         // Memanggil method static langsung melalui nama kelas
         double luaspersegi = ContohMethodStaticDanNonStatic.hitungLuasPersegi(5);
         System.out.println("Luas persegi dengan sisi 5: " + luaspersegi);
+
+        // Membuat objek dari kelas untuk memanggil method non-static
+        ContohMethodStaticDanNonStatic objek = new ContohMethodStaticDanNonStatic();
+        objek.tampilkanPesanSelamatDatang("John");
+        objek.hitungLuasPersegi(5);
     }
 }
